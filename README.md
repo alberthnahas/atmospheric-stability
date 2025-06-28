@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project provides a complete workflow to download atmospheric forecast data, generate analytical plots (Skew-T Log-P and Hodograph), and produce a detailed atmospheric stability report. The analysis is based on forecast data from the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System (IFS), obtained via the Copernicus Atmosphere Monitoring Service (CAMS).
+This project provides a comprehensive workflow for downloading atmospheric forecast data, generating analytical plots (Skew-T Log-P and Hodograph), and producing a detailed atmospheric stability report from a single point (the codes are generated for Kemayoran, Jakarta). The analysis is based on forecast data from the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System (IFS), obtained via the Copernicus Atmosphere Monitoring Service (CAMS).
 
 The process is divided into three main steps:
 
@@ -55,13 +55,13 @@ Accessing the data is free but requires setting up an API key.
 
 
 
-### Workflow / Usage
+### Workflow/Usage
 
 Follow these steps in order to run the full analysis.
 
 #### Step 1: Generate the Python Download Script
 
-Run the R script to create the Python download script. This will automatically set the date in the request to yesterday.
+Run the R script to create the Python download script. This will automatically set the date in the request to the previous day.
 
 ```bash
 Rscript code/01_generate_python.R
