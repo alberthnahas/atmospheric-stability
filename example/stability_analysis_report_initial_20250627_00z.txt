@@ -6,25 +6,36 @@ Initialization Time: 2025-06-27 00:00Z
 --- Stability Classification Reference ---
 Based on Environmental Lapse Rate (Γ = -dT/dz) in the surface layer.
 
-- Γ < 0      K/km: Absolutely Stable (Inversion). Strongest trapping.
-- 0 to 2   K/km: Extremely Stable. Very strong trapping.
-- 2 to 5   K/km: Very Stable. Significant trapping.
-- 5 to 8   K/km: Moderately Stable. Some trapping.
-- 8 to 9.8 K/km: Weakly Stable. Dispersion becoming favorable.
-- Γ >= 9.8 K/km: Neutral / Unstable. Good dispersion.
+- Γ < 0    K/km: Absolutely Stable (Inversion) - Strongest trapping
+- 0 to 2   K/km: Extremely Stable - Very strong trapping
+- 2 to 5   K/km: Very Stable - Significant trapping
+- 5 to 8   K/km: Moderately Stable - Some trapping
+- 8 to 9.8 K/km: Weakly Stable - Dispersion becoming favorable
+- Γ >= 9.8 K/km: Neutral/Unstable - Good dispersion
+----------------------------------------
+
+--- Boundary Layer Analysis Reference ---
+1. Mixing Height: The depth of the layer available for pollutant dilution
+   - < 500 m: Shallow - Very poor dilution - High concentrations likely
+   - 500-1500 m: Moderate - Dilution is limited
+   - > 1500 m: Deep - Good dilution potential
+
+2. Low-Level Jet (LLJ): A peak in wind speed in the lower atmosphere
+   - Can increase surface turbulence and ventilation
+   - Can also transport pollutants from upwind sources over long distances
 ----------------------------------------
 
 --- Hodograph Analysis Reference ---
-Provides insights into ventilation and severe weather potential.
+Provides insights into ventilation and severe weather potential
 
-1. Mean Wind (0-1 km AGL): Indicates surface ventilation potential.
-   - < 5 m/s: Poor ventilation, favorable for pollutant trapping.
-   - > 5 m/s: Good ventilation, favorable for dispersion.
+1. Mean Wind (0-1 km AGL): Indicates surface ventilation potential
+   - < 5 m/s: Poor ventilation, favorable for pollutant trapping
+   - > 5 m/s: Good ventilation, favorable for dispersion
 
-2. Bulk Shear (0-6 km): Indicates potential for thunderstorm organization.
-   - < 25 knots: Disorganized, single-cell storms are likely.
-   - 25-40 knots: Favorable for organized multicell thunderstorms.
-   - > 40 knots: Favorable for supercells (rotating storms).
+2. Bulk Shear (0-6 km): Indicates potential for thunderstorm organization
+   - < 25 knots: Disorganized, single-cell storms are likely
+   - 25-40 knots: Favorable for organized multicell thunderstorms
+   - > 40 knots: Favorable for supercells (rotating storms)
 ----------------------------------------
 
 --- Convective Potential (CAPE/CIN) Reference ---
@@ -33,341 +44,392 @@ CIN (J/kg): 0 to -25 (Weak Cap), -25 to -100 (Moderate Cap), < -100 (Strong Cap)
 ----------------------------------------
 
 
---- Analysis for Forecast +0h (Valid: 2025-06-27 00:00Z) or 2025-06-27 07:00 WIB) ---
+--- Analysis for Forecast +0h (Valid: 2025-06-27 00:00Z or 2025-06-27 07:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 4.91 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 451 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 1.38 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 21.78 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 994 J/kg | CIN: -28 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +6h (Valid: 2025-06-27 06:00Z) or 2025-06-27 13:00 WIB) ---
+--- Analysis for Forecast +6h (Valid: 2025-06-27 06:00Z or 2025-06-27 13:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 9.64 Δ°C/km
 Stability Condition: Weakly Stable
-Conclusion: Dispersion is favorable.
+Conclusion: Dispersion is favorable
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 1421 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 2.73 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 23.60 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1046 J/kg | CIN: -7 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +12h (Valid: 2025-06-27 12:00Z) or 2025-06-27 19:00 WIB) ---
+--- Analysis for Forecast +12h (Valid: 2025-06-27 12:00Z or 2025-06-27 19:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 8.62 Δ°C/km
 Stability Condition: Weakly Stable
-Conclusion: Dispersion is favorable.
+Conclusion: Dispersion is favorable
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 1419 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 1.47 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 23.92 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1561 J/kg | CIN: -6 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +18h (Valid: 2025-06-27 18:00Z) or 2025-06-28 01:00 WIB) ---
+--- Analysis for Forecast +18h (Valid: 2025-06-27 18:00Z or 2025-06-28 01:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 6.69 Δ°C/km
 Stability Condition: Moderately Stable
-Conclusion: Some trapping potential.
+Conclusion: Some trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 684 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 1.82 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 20.75 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1208 J/kg | CIN: -15 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +24h (Valid: 2025-06-28 00:00Z) or 2025-06-28 07:00 WIB) ---
+--- Analysis for Forecast +24h (Valid: 2025-06-28 00:00Z or 2025-06-28 07:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 4.83 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 450 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 1.25 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 16.91 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 552 J/kg | CIN: -61 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +30h (Valid: 2025-06-28 06:00Z) or 2025-06-28 13:00 WIB) ---
+--- Analysis for Forecast +30h (Valid: 2025-06-28 06:00Z or 2025-06-28 13:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 9.80 Δ°C/km
-Stability Condition: Neutral / Unstable
-Conclusion: Good vertical dispersion.
+Stability Condition: Neutral/Unstable
+Conclusion: Good vertical dispersion
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 1422 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 0.57 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 20.79 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1742 J/kg | CIN: 0 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +36h (Valid: 2025-06-28 12:00Z) or 2025-06-28 19:00 WIB) ---
+--- Analysis for Forecast +36h (Valid: 2025-06-28 12:00Z or 2025-06-28 19:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 3.85 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 450 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 2.98 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 20.19 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 678 J/kg | CIN: -54 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +42h (Valid: 2025-06-28 18:00Z) or 2025-06-29 01:00 WIB) ---
+--- Analysis for Forecast +42h (Valid: 2025-06-28 18:00Z or 2025-06-29 01:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 2.91 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 450 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 0.92 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 23.30 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 216 J/kg | CIN: -132 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Strong cap. Convection is unlikely.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Strong cap - Convection is unlikely
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +48h (Valid: 2025-06-29 00:00Z) or 2025-06-29 07:00 WIB) ---
+--- Analysis for Forecast +48h (Valid: 2025-06-29 00:00Z or 2025-06-29 07:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 4.81 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 449 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 1.36 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 25.08 kt
-  - Storm Potential: Favorable for multicell storms.
+  - Storm Potential: Favorable for multicell storms
 --- Convective Potential Analysis ---
 CAPE: 295 J/kg | CIN: -53 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +54h (Valid: 2025-06-29 06:00Z) or 2025-06-29 13:00 WIB) ---
+--- Analysis for Forecast +54h (Valid: 2025-06-29 06:00Z or 2025-06-29 13:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 9.13 Δ°C/km
 Stability Condition: Weakly Stable
-Conclusion: Dispersion is favorable.
+Conclusion: Dispersion is favorable
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 921 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 2.34 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 26.98 kt
-  - Storm Potential: Favorable for multicell storms.
+  - Storm Potential: Favorable for multicell storms
 --- Convective Potential Analysis ---
 CAPE: 1114 J/kg | CIN: -3 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +60h (Valid: 2025-06-29 12:00Z) or 2025-06-29 19:00 WIB) ---
+--- Analysis for Forecast +60h (Valid: 2025-06-29 12:00Z or 2025-06-29 19:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 5.68 Δ°C/km
 Stability Condition: Moderately Stable
-Conclusion: Some trapping potential.
+Conclusion: Some trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 684 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 2.98 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 17.97 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1450 J/kg | CIN: -20 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +66h (Valid: 2025-06-29 18:00Z) or 2025-06-30 01:00 WIB) ---
+--- Analysis for Forecast +66h (Valid: 2025-06-29 18:00Z or 2025-06-30 01:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 2.79 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 450 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 4.51 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 13.98 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 779 J/kg | CIN: -42 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +72h (Valid: 2025-06-30 00:00Z) or 2025-06-30 07:00 WIB) ---
+--- Analysis for Forecast +72h (Valid: 2025-06-30 00:00Z or 2025-06-30 07:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 2.47 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 450 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 4.76 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 16.63 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 358 J/kg | CIN: -94 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Moderate cap. Requires strong forcing to break.
-  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks.
+  - Instability Level: Marginal instability
+  - Capping Strength: Moderate cap - Requires strong forcing to break
+  - Overall Conclusion: Storms are unlikely, but could be severe if cap breaks
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +78h (Valid: 2025-06-30 06:00Z) or 2025-06-30 13:00 WIB) ---
+--- Analysis for Forecast +78h (Valid: 2025-06-30 06:00Z or 2025-06-30 13:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 9.83 Δ°C/km
-Stability Condition: Neutral / Unstable
-Conclusion: Good vertical dispersion.
+Stability Condition: Neutral/Unstable
+Conclusion: Good vertical dispersion
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 1421 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 3.96 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 15.79 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1306 J/kg | CIN: 0 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +84h (Valid: 2025-06-30 12:00Z) or 2025-06-30 19:00 WIB) ---
+--- Analysis for Forecast +84h (Valid: 2025-06-30 12:00Z or 2025-06-30 19:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 6.82 Δ°C/km
 Stability Condition: Moderately Stable
-Conclusion: Some trapping potential.
+Conclusion: Some trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 925 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 4.84 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 15.80 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 1073 J/kg | CIN: -20 J/kg
-  - Instability Level: Moderate instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Moderate instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +90h (Valid: 2025-06-30 18:00Z) or 2025-07-01 01:00 WIB) ---
+--- Analysis for Forecast +90h (Valid: 2025-06-30 18:00Z or 2025-07-01 01:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 5.62 Δ°C/km
 Stability Condition: Moderately Stable
-Conclusion: Some trapping potential.
+Conclusion: Some trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 683 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 3.73 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 4.47 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 846 J/kg | CIN: -7 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Marginal instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
 
 
---- Analysis for Forecast +96h (Valid: 2025-07-01 00:00Z) or 2025-07-01 07:00 WIB) ---
+--- Analysis for Forecast +96h (Valid: 2025-07-01 00:00Z or 2025-07-01 07:00 WIB) ---
 --- Inversion Analysis ---
 Surface-based inversion: Not Detected
 --- Surface Layer Stability Analysis ---
 Lapse rate: 4.43 Δ°C/km
 Stability Condition: Very Stable
-Conclusion: Significant trapping potential.
+Conclusion: Significant trapping potential
+--- Boundary Layer Analysis ---
+Estimated Mixing Height: 448 m
+Low-Level Jet: Not Detected
 --- Hodograph Analysis ---
 Mean Wind (0-1 km): 4.05 m/s
-  - Ventilation: Poor. Favorable for trapping.
+  - Ventilation: Poor - Favorable for trapping
 Bulk Shear (0-6 km): 1.79 kt
-  - Storm Potential: Disorganized, single-cell storms.
+  - Storm Potential: Disorganized, single-cell storms
 --- Convective Potential Analysis ---
 CAPE: 420 J/kg | CIN: -23 J/kg
-  - Instability Level: Marginal instability.
-  - Capping Strength: Weak cap. Storms can initiate easily.
-  - Overall Conclusion: Thunderstorms are possible if lift is present.
+  - Instability Level: Marginal instability
+  - Capping Strength: Weak cap - Storms can initiate easily
+  - Overall Conclusion: Thunderstorms are possible if lift is present
 ----------------------------------------------------------------------
