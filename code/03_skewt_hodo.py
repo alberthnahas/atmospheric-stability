@@ -123,7 +123,7 @@ with open(OUTPUT_REPORT_FILENAME, 'w') as report_file:
         print(f"Plot saved as: {output_plot_filename}")
 
         # --- ANALYSIS REPORT ---
-        report_file.write(f"\n\n--- Analysis for Forecast +{lead_time_hours:.0f}h (Valid: {valid_time_utc_str}) or {valid_time_wib_str}) ---\n")
+        report_file.write(f"\n\n--- Analysis for Forecast +{lead_time_hours:.0f}h (Valid: {valid_time_utc_str} or {valid_time_wib_str}) ---\n")
         
         # (All analysis sections follow...)
         report_file.write(f"--- Inversion Analysis ---\n")
