@@ -2,14 +2,13 @@
 
 ### Overview
 
-This project provides a comprehensive workflow for downloading atmospheric forecast data, generating analytical plots (Skew-T Log-P and Hodograph), and producing a detailed atmospheric stability report from a single point (the codes are generated for [Kemayoran, Jakarta](https://maps.app.goo.gl/oxvD5d5QV9Y7BBV9A)). The analysis is based on forecast data from the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System (IFS), obtained via the Copernicus Atmosphere Monitoring Service (CAMS).
+This project provides a comprehensive workflow for downloading atmospheric forecast data, generating analytical plots (Skew-T Log-P, Hodograph, and Vertical Profiles), and producing a detailed atmospheric stability report from a single point (the codes are generated for [Kemayoran, Jakarta](https://maps.app.goo.gl/oxvD5d5QV9Y7BBV9A)). The analysis is based on forecast data from the European Centre for Medium-Range Weather Forecasts (ECMWF) Integrated Forecasting System (IFS), obtained via the Copernicus Atmosphere Monitoring Service (CAMS).
 
 The process is divided into three main steps:
 
 1.  **Generate Download Script:** An R script dynamically creates a Python script to download meteorological data for the previous day.
 2.  **Download Data:** The generated Python script fetches the specified forecast data.
 3.  **Analyze and Plot:** A final Python script processes the downloaded data to create Skew-T plots, Hodographs, and a comprehensive stability analysis text report for each forecast lead time.
-
 
 ### Data Source
 
@@ -42,8 +41,6 @@ Accessing the data is free but requires setting up an API key.
     key: {UID}:{API-KEY}
     ```
 
-
-
 ### Prerequisites
 
   * **R:** Required to run the first script. No special packages are needed.
@@ -52,8 +49,6 @@ Accessing the data is free but requires setting up an API key.
     ```bash
     pip install cdsapi xarray netcdf4 matplotlib numpy pandas metpy
     ```
-
-
 
 ### Workflow/Usage
 
@@ -95,24 +90,25 @@ Execute the main analysis script. This will read the `cams_data_kemayoran.nc` fi
 python code/03_skewt_hodo.py
 ```
 
-
 ### Outputs
 
 The final script produces two types of outputs for each forecast time step:
 
-1.  **Image Files (`.png`):** A plot containing the Skew-T Log-P diagram, parcel path, and a Hodograph.
+1.  **Image Files (`.png`):** A comprehensive plot containing the Skew-T Log-P diagram, a Hodograph, and vertical profiles of potential temperature and wind speed.
 
-      * **Filename example:** `skewt_hodograph_kemayoran_jakarta_initial_20231026_00z_forecast_20231027_12z.png`
+      * **Filename example:** `full_vertical_profile_kemayoran_jakarta_initial_20250627_00z_forecast_20250627_12z.png`
 
 2.  **Text Report (`.txt`):** A detailed report containing analysis on:
 
       * Surface-based inversions
       * Surface layer stability and lapse rate
+      * Boundary Layer analysis (Estimated Mixing Height and Low-Level Jet)
       * Hodograph analysis (low-level ventilation and bulk shear)
       * Convective potential (CAPE and CIN)
-      * **Filename example:** `stability_analysis_report_initial_20231026_00z.txt`
+      * **Filename example:** `stability_analysis_report_initial_20250627_00z.txt`
 
 ### File repository
 
 The final products are kept in the following link, archived by date of production:
-* **Website:** [https://cews.bmkg.go.id/tempatirk/Atmospheric_Stability/](https://cews.bmkg.go.id/tempatirk/Atmospheric_Stability/)
+
+  * **Website:** [https://cews.bmkg.go.id/tempatirk/Atmospheric\_Stability/](https://cews.bmkg.go.id/tempatirk/Atmospheric_Stability/)
