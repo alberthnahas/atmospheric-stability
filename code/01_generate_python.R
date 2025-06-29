@@ -3,11 +3,11 @@ rm(list = ls())
 gc()
 
 # Get yesterday's date in YYYY-MM-DD format
-yesterday <- format(Sys.Date() - 1, "%Y-%m-%d")
+today <- format(Sys.Date(), "%Y-%m-%d")
 
 # Create and print the date line for the Python request dictionary.
 # The print() function also returns the string, which is then used in writeLines.
-date_line <- print(paste0('    "date": ["', yesterday, '/', yesterday, '"],'))
+date_line <- print(paste0('    "date": ["', today, '/', today, '"],'))
 
 # Open the output file for writing the Python script.
 # Note: The filename is kept as per the original script, but the content it generates has changed.
