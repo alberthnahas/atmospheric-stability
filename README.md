@@ -56,7 +56,7 @@ Follow these steps in order to run the full analysis.
 
 #### Step 1: Generate the Python Download Script
 
-Run the R script to create the Python download script. This will automatically set the date in the request to the previous day.
+Run the R script to create the Python download script. This will automatically set the date in the request to the current day.
 
 ```bash
 Rscript code/01_generate_python.R
