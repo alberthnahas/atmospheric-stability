@@ -16,7 +16,7 @@ Based on Environmental Lapse Rate (Γ = -dT/dz) in the surface layer.
 
 --- Boundary Layer Analysis Reference ---
 1. Mixing Height: The depth of the layer available for pollutant dilution
-   - < 500 m: Shallow - Very poor dilution - High concentrations likely
+   - < 500 m: Shallow - Very poor dilution, high concentrations likely
    - 500-1500 m: Moderate - Dilution is limited
    - > 1500 m: Deep - Good dilution potential
 
