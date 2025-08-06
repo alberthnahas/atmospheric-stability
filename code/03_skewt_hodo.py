@@ -8,6 +8,7 @@ import metpy.calc as mpcalc
 from metpy.plots import SkewT, Hodograph
 from metpy.units import units
 from metpy.constants import Rd, g, dry_adiabatic_lapse_rate
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 
 # --- 1. CONFIGURATION ---
 NC_FILENAME = 'cams_data_kemayoran.nc'
@@ -15,7 +16,10 @@ LOCATION_NAME = 'Kemayoran, Jakarta'
 
 # --- 2. DATA LOADING ---
 try:
-    ds = xr.open_dataset(NC_FILENAME, decode_timedelta=True)
+    ds = xr.open_dataset(NC_FILENAME, decode_timedelta=False)  # Open without decoding
+    if 'dtype' in ds['forecast_period'].attrs:
+        del ds['forecast_period'].attrs['dtype']  # Remove conflicting attribute
+    ds = xr.decode_cf(ds)  # Decode CF-compliant metadata manually
 except FileNotFoundError:
     print(f"ERROR: File not found -> '{NC_FILENAME}'")
     exit()
@@ -53,7 +57,7 @@ with open(OUTPUT_REPORT_FILENAME, 'w') as report_file:
     # NEW: Boundary Layer Reference Guide
     report_file.write("--- Boundary Layer Analysis Reference ---\n")
     report_file.write("1. Mixing Height: The depth of the layer available for pollutant dilution\n")
-    report_file.write("   - < 500 m: Shallow - Very poor dilution - High concentrations likely\n")
+    report_file.write("   - < 500 m: Shallow - Very poor dilution, high concentrations likely\n")
     report_file.write("   - 500-1500 m: Moderate - Dilution is limited\n")
     report_file.write("   - > 1500 m: Deep - Good dilution potential\n\n")
     report_file.write("2. Low-Level Jet (LLJ): A peak in wind speed in the lower atmosphere\n")
@@ -126,8 +130,13 @@ with open(OUTPUT_REPORT_FILENAME, 'w') as report_file:
         hodo_ax.set_title('Hodograph')
         h = Hodograph(hodo_ax, component_range=80.)
         h.add_grid(increment=20); line = h.plot_colormapped(u, v, H.to('km'), cmap='viridis')
-        divider = make_axes_locatable(hodo_ax); cax = divider.append_axes("right", size="5%", pad=0.1)
-        fig.colorbar(line, cax=cax, label='Height (km AGL)')
+        # Use make_axes_locatable for better alignment with hodograph height
+        divider = make_axes_locatable(hodo_ax)
+        cax = divider.append_axes("right", size="5%", pad=0.1)
+        cbar = fig.colorbar(line, cax=cax)
+        cbar.set_label('Height (km AGL)')
+
+
         hodo_ax.set_xlabel('U-Wind (m/s)'); hodo_ax.set_ylabel('V-Wind (m/s)')
         
         profile_ax = fig.add_subplot(gs[2])
@@ -183,7 +192,7 @@ with open(OUTPUT_REPORT_FILENAME, 'w') as report_file:
             else: report_file.write("Could not calculate lapse rate\n")
         except Exception as e: report_file.write(f"Could not perform stability analysis: {e}\n")
 
-        # NEW: Boundary Layer Analysis Section
+        # Boundary Layer Analysis Section
         report_file.write(f"--- Boundary Layer Analysis ---\n")
         try:
             # Estimate Mixing Height
@@ -249,3 +258,4 @@ with open(OUTPUT_REPORT_FILENAME, 'w') as report_file:
 
 print(f"\nAll plots generated and analysis complete.")
 print(f"Full report saved to: {OUTPUT_REPORT_FILENAME}")
+
